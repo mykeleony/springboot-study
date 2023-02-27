@@ -7,7 +7,6 @@
     <list default="true" id="c7e8531b-5c45-4bd9-ba5a-b96edb5683bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/ConfigurationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/ConfigurationExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -114,7 +114,7 @@
       <updated>1677160911682</updated>
       <workItem from="1677160914941" duration="3126000" />
       <workItem from="1677175722233" duration="1738000" />
-      <workItem from="1677249457299" duration="2931000" />
+      <workItem from="1677249457299" duration="4064000" />
     </task>
     <servers />
   </component>

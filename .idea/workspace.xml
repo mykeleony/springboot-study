@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7e8531b-5c45-4bd9-ba5a-b96edb5683bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/ConfigurationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/ConfigurationExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/ConfigurationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/studyonly/ConfigurationExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/SalesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/studyonly/SalesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/annotation/Development.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/studyonly/annotation/Development.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-development.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/study-only/application-development.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-production.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/study-only/application-production.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +69,18 @@
     &quot;spring.configuration.checksum&quot;: &quot;9ed083b1436e5f40ef984b28255eef18&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\015234631\Desktop\sales\src\main\resources\study-only" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.SalesApplication">
-    <configuration name="io.github.mykeleony.SalesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.mykeleony.SalesApplication" />
+    <configuration name="io.github.mykeleony.studyonly.SalesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.mykeleony.studyonly.SalesApplication" />
       <module name="sales" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.mykeleony.*" />
+          <option name="PATTERN" value="io.github.mykeleony.studyonly.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,7 +99,7 @@
     </configuration>
     <configuration name="SalesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sales" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.mykeleony.SalesApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.mykeleony.studyonly.SalesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,7 +109,7 @@
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="Application.io.github.mykeleony.SalesApplication" />
+        <item itemvalue="Application.io.github.mykeleony.studyonly.SalesApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -115,6 +124,7 @@
       <workItem from="1677160914941" duration="3126000" />
       <workItem from="1677175722233" duration="1738000" />
       <workItem from="1677249457299" duration="4064000" />
+      <workItem from="1677532402971" duration="727000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package io.github.mykeleony;
+package io.github.mykeleony.studyonly;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;

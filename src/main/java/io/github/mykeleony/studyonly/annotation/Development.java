@@ -1,4 +1,4 @@
-package io.github.mykeleony.annotation;
+package io.github.mykeleony.studyonly.annotation;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;

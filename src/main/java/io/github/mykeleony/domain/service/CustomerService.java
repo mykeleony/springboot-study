@@ -1,7 +1,7 @@
 package io.github.mykeleony.domain.service;
 
 import io.github.mykeleony.domain.model.Customer;
-import io.github.mykeleony.domain.service.repository.CustomerRepository;
+import io.github.mykeleony.domain.repository.CustomerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

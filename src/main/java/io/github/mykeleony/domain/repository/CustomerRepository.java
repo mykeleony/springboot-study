@@ -1,4 +1,4 @@
-package io.github.mykeleony.domain.service.repository;
+package io.github.mykeleony.domain.repository;
 
 import io.github.mykeleony.domain.model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;

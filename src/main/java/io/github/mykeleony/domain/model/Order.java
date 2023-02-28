@@ -1,14 +1,12 @@
 package io.github.mykeleony.domain.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -19,9 +17,17 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
+    @Column(name = "order_date")
     private LocalDate orderDate;
 
+    @Column(length = 20, precision = 2)     // NUMERIC(20, 2)
     private BigDecimal total;
+
+    @OneToMany(mappedBy = "order")
+    private List<OrderItem> items;
+
 }

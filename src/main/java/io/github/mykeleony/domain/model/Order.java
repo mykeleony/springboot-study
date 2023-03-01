@@ -30,4 +30,12 @@ public class Order {
     @OneToMany(mappedBy = "order")
     private List<OrderItem> items;
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", orderDate=" + orderDate +
+                ", total=" + total +
+                '}';
+    }
 }

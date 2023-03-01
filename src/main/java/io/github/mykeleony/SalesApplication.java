@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Set;
 
 @SpringBootApplication
 public class SalesApplication {
@@ -36,6 +37,9 @@ public class SalesApplication {
 
             Customer c1 = customerRepository.findCustomerFetchOrOrders(c.getId());
             System.out.println(c1);
+
+            Set<Order> orders = orderRepository.findByCustomer(c);
+            System.out.println(orders);
         };
     }
 

@@ -14,7 +14,7 @@ public class CustomerService {
     private CustomerRepository customerRepository;
 
     public List<Customer> searchCustomers(String name) {
-        return customerRepository.findByNameLike(name);
+        return customerRepository.findCustomersByNameLike(name);
     }
 
     public List<Customer> searchCustomers2(String name) {

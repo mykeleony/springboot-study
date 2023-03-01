@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7e8531b-5c45-4bd9-ba5a-b96edb5683bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/SalesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/SalesApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,8 @@
       <workItem from="1677175722233" duration="1738000" />
       <workItem from="1677249457299" duration="4064000" />
       <workItem from="1677532402971" duration="5452000" />
-      <workItem from="1677603815783" duration="3238000" />
+      <workItem from="1677603815783" duration="6020000" />
+      <workItem from="1677713785423" duration="324000" />
     </task>
     <servers />
   </component>

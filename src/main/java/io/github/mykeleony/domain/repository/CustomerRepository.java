@@ -11,9 +11,12 @@ import java.util.List;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
-    List<Customer> findByNameLike(String name);
+    List<Customer> findCustomersByNameLike(String name);
 
     @Query(value = " SELECT * FROM customers c WHERE c.name LIKE '%:name%' ", nativeQuery = true)
     List<Customer> findByNameLike2(@Param("name") String name);
+
+    @Query("SELECT c FROM customers c LEFT JOIN FETCH c.orders WHERE c.id =:id")
+    Customer findCustomerFetchOrOrders(@Param("id") Long id);
 
 }

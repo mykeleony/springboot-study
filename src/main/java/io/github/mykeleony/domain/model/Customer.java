@@ -3,11 +3,13 @@ package io.github.mykeleony.domain.model;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Set;
 
 @Getter
 @Setter
+@ToString
 @Entity(name = "customers")
 public class Customer {
 
@@ -17,7 +19,7 @@ public class Customer {
 
     private String name;
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
     private Set<Order> orders;
 
 }

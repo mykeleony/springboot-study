@@ -1,6 +1,7 @@
 package io.github.mykeleony.api.controller;
 
 import io.github.mykeleony.domain.model.Customer;
+import io.github.mykeleony.domain.repository.CustomerRepository;
 import io.github.mykeleony.domain.service.CustomerService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class CustomerController {
 
     private CustomerService customerService;
+    private CustomerRepository customerRepository;
 
     @GetMapping("/{id}")
     public ResponseEntity<Customer> getById(@PathVariable Long id) {
@@ -23,6 +25,17 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.CREATED)
     public Customer create(@RequestBody Customer customer) {
         return customerService.save(customer);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> remove(@PathVariable Long id) {
+        if (!customerRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+
+        customerService.remove(id);
+
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping({"/hello/{name}", "/hey/{name}"})

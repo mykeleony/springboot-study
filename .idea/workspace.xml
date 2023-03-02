@@ -7,8 +7,6 @@
     <list default="true" id="c7e8531b-5c45-4bd9-ba5a-b96edb5683bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +133,7 @@
       <workItem from="1677532402971" duration="5452000" />
       <workItem from="1677603815783" duration="6020000" />
       <workItem from="1677713785423" duration="1880000" />
-      <workItem from="1677765815413" duration="3198000" />
+      <workItem from="1677765815413" duration="4821000" />
     </task>
     <servers />
   </component>

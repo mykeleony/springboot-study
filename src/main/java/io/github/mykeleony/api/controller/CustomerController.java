@@ -3,6 +3,7 @@ package io.github.mykeleony.api.controller;
 import io.github.mykeleony.domain.model.Customer;
 import io.github.mykeleony.domain.service.CustomerService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +17,12 @@ public class CustomerController {
     @GetMapping("/{id}")
     public ResponseEntity<Customer> getById(@PathVariable Long id) {
         return customerService.findById(id);
+    }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public Customer create(@RequestBody Customer customer) {
+        return customerService.save(customer);
     }
 
     @GetMapping({"/hello/{name}", "/hey/{name}"})

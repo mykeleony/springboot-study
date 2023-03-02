@@ -27,6 +27,18 @@ public class CustomerController {
         return customerService.save(customer);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Customer> update(@PathVariable Long id, @RequestBody Customer customer) {
+        if (!customerRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+
+        customer.setId(id);
+        Customer updatedCustomer = customerService.save(customer);
+
+        return ResponseEntity.ok(updatedCustomer);
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> remove(@PathVariable Long id) {
         if (!customerRepository.existsById(id)) {

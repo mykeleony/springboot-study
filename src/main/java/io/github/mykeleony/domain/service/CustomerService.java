@@ -13,12 +13,12 @@ public class CustomerService {
 
     private CustomerRepository customerRepository;
 
-    public List<Customer> searchCustomers(String name) {
+    public List<Customer> findByName(String name) {
         return customerRepository.findCustomersByNameLike(name);
     }
 
-    public List<Customer> searchCustomers2(String name) {
-        return customerRepository.findByNameLike2(name);
-    }
+//    public List<Customer> searchCustomers2(String name) {
+//        return customerRepository.findByNameLike2(name);
+//    }
 
 }

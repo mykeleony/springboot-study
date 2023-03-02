@@ -3,6 +3,7 @@ package io.github.mykeleony.domain.service;
 import io.github.mykeleony.domain.model.Customer;
 import io.github.mykeleony.domain.repository.CustomerRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,8 +19,9 @@ public class CustomerService {
         return customerRepository.findCustomersByNameLike(name);
     }
 
-    public Optional<Customer> findById(Long id) {
-        return customerRepository.findById(id);
+    public ResponseEntity<Customer> findById(Long id) {
+        return customerRepository.findById(id).map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
 //    public List<Customer> searchCustomers2(String name) {

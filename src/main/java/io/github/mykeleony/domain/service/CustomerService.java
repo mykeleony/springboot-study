@@ -30,6 +30,11 @@ public class CustomerService {
         return customerRepository.save(customer);
     }
 
+    @Transactional
+    public void remove(Long id) {
+        customerRepository.deleteById(id);
+    }
+
 //    public List<Customer> searchCustomers2(String name) {
 //        return customerRepository.findByNameLike2(name);
 //    }

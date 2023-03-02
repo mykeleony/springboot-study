@@ -17,35 +17,34 @@ import java.util.Set;
 @SpringBootApplication
 public class SalesApplication {
 
-    @Bean
-    public CommandLineRunner init(@Autowired CustomerRepository customerRepository,
-                                  @Autowired OrderRepository orderRepository) {
-        return args -> {
-            System.out.println("Saving customers");
-
-            Customer c = new Customer();
-            c.setName("Myke");
-
-            customerRepository.save(c);
-
-            Order order = new Order();
-            order.setCustomer(c);
-            order.setOrderDate(LocalDate.now());
-            order.setTotal(BigDecimal.valueOf(100.0));
-
-            orderRepository.save(order);
-
-            Customer c1 = customerRepository.findCustomerFetchOrOrders(c.getId());
-            System.out.println(c1);
-
-            Set<Order> orders = orderRepository.findByCustomer(c);
-            System.out.println(orders);
-        };
-    }
+//    @Bean
+//    public CommandLineRunner init(@Autowired CustomerRepository customerRepository,
+//                                  @Autowired OrderRepository orderRepository) {
+//        return args -> {
+//            System.out.println("Saving customers");
+//
+//            Customer c = new Customer();
+//            c.setName("Myke");
+//
+//            customerRepository.save(c);
+//
+//            Order order = new Order();
+//            order.setCustomer(c);
+//            order.setOrderDate(LocalDate.now());
+//            order.setTotal(BigDecimal.valueOf(100.0));
+//
+//            orderRepository.save(order);
+//
+//            Customer c1 = customerRepository.findCustomerFetchOrOrders(c.getId());
+//            System.out.println(c1);
+//
+//            Set<Order> orders = orderRepository.findByCustomer(c);
+//            System.out.println(orders);
+//        };
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(SalesApplication.class, args);
     }
-
 
 }

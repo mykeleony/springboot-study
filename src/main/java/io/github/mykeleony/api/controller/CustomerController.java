@@ -15,7 +15,7 @@ public class CustomerController {
 
     private CustomerService customerService;
 
-    @GetMapping("/hello/{name}")
+    @GetMapping({"/hello/{name}", "/hey/{name}"})
     public String helloClient(@PathVariable String name) {
         return String.format("Hello, %s! Welcome to Myke's REST API!", name);
     }

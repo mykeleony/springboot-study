@@ -1,15 +1,22 @@
 package io.github.mykeleony.api.controller;
 
+import io.github.mykeleony.domain.model.Customer;
 import io.github.mykeleony.domain.service.CustomerService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/sales")
+@RequestMapping("/customers")
 public class CustomerController {
 
     private CustomerService customerService;
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Customer> getById(@PathVariable Long id) {
+        return customerService.findById(id);
+    }
 
     @GetMapping({"/hello/{name}", "/hey/{name}"})
     public String helloCustomer(@PathVariable String name) {

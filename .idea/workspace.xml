@@ -7,6 +7,8 @@
     <list default="true" id="c7e8531b-5c45-4bd9-ba5a-b96edb5683bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +78,8 @@
       <recent name="C:\Users\015234631\Desktop\sales\src\main\resources\study-only" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #7">
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.SalesApplication (1)">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
@@ -111,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #7" />
         <item itemvalue="Spring Boot.SalesApplication (1)" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
         <item itemvalue="HTTP Request.generated-requests | #5" />
         <item itemvalue="HTTP Request.generated-requests | #4" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +135,7 @@
       <workItem from="1677532402971" duration="5452000" />
       <workItem from="1677603815783" duration="6020000" />
       <workItem from="1677713785423" duration="1880000" />
-      <workItem from="1677765815413" duration="1244000" />
+      <workItem from="1677765815413" duration="3198000" />
     </task>
     <servers />
   </component>

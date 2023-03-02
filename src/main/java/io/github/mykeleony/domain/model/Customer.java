@@ -1,5 +1,7 @@
 package io.github.mykeleony.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,6 +22,7 @@ public class Customer {
     private String name;
 
     @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
+    @JsonManagedReference
     private Set<Order> orders;
 
 }

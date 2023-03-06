@@ -68,6 +68,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;9ed083b1436e5f40ef984b28255eef18&quot;
   }
 }</component>
@@ -134,7 +135,8 @@
       <workItem from="1677603815783" duration="6020000" />
       <workItem from="1677713785423" duration="1880000" />
       <workItem from="1677765815413" duration="5876000" />
-      <workItem from="1677780561628" duration="66000" />
+      <workItem from="1677780561628" duration="2634000" />
+      <workItem from="1678121890754" duration="2531000" />
     </task>
     <servers />
   </component>

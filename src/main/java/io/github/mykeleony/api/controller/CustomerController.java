@@ -4,9 +4,13 @@ import io.github.mykeleony.domain.model.Customer;
 import io.github.mykeleony.domain.repository.CustomerRepository;
 import io.github.mykeleony.domain.service.CustomerService;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @AllArgsConstructor
 @RestController
@@ -19,6 +23,11 @@ public class CustomerController {
     @GetMapping("/{id}")
     public ResponseEntity<Customer> getById(@PathVariable Long id) {
         return customerService.findById(id);
+    }
+
+    @GetMapping
+    public List<Customer> find(Customer customerFilter) {
+        return customerService.findFiltered(customerFilter);
     }
 
     @PostMapping

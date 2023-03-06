@@ -4,6 +4,7 @@ import io.github.mykeleony.domain.model.Product;
 import io.github.mykeleony.domain.repository.ProductRepository;
 import io.github.mykeleony.domain.service.ProductService;
 import lombok.AllArgsConstructor;
+import org.springframework.boot.env.RandomValuePropertySourceEnvironmentPostProcessor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -38,6 +39,17 @@ public class ProductController {
         Product updatedProduct = productService.save(product);
 
         return ResponseEntity.ok(updatedProduct);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        if (!productRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+
+        productService.delete(id);
+
+        return ResponseEntity.noContent().build();
     }
 
 }

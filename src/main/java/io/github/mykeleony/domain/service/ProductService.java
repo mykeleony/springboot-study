@@ -4,9 +4,11 @@ import io.github.mykeleony.domain.model.Customer;
 import io.github.mykeleony.domain.model.Product;
 import io.github.mykeleony.domain.repository.ProductRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.server.ResponseStatusException;
 
 @AllArgsConstructor
 @Service
@@ -20,7 +22,7 @@ public class ProductService {
     }
 
     @Transactional
-    public Product create(Product product) {
+    public Product save(Product product) {
         return productRepository.save(product);
     }
 

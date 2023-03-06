@@ -3,12 +3,13 @@ package io.github.mykeleony.domain.service;
 import io.github.mykeleony.domain.model.Customer;
 import io.github.mykeleony.domain.repository.CustomerRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Optional;
 
 @AllArgsConstructor
 @Service
@@ -23,6 +24,16 @@ public class CustomerService {
     public ResponseEntity<Customer> findById(Long id) {
         return customerRepository.findById(id).map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    public List<Customer> findFiltered(Customer customerFilter) {
+        ExampleMatcher matcher = ExampleMatcher.matching()
+                .withIgnoreCase()
+                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING);
+
+        Example<Customer> example = Example.of(customerFilter, matcher);
+
+        return customerRepository.findAll(example);
     }
 
     @Transactional

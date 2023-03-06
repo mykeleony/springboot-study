@@ -24,7 +24,20 @@ public class ProductController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Product create(@RequestBody Product product) {
-        return productService.create(product);
+        return productService.save(product);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Product> update(@PathVariable Long id, @RequestBody Product product) {
+        if (!productRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+
+        product.setId(id);
+
+        Product updatedProduct = productService.save(product);
+
+        return ResponseEntity.ok(updatedProduct);
     }
 
 }

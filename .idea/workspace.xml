@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c7e8531b-5c45-4bd9-ba5a-b96edb5683bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/api/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/mykeleony/domain/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +136,7 @@
       <workItem from="1677713785423" duration="1880000" />
       <workItem from="1677765815413" duration="5876000" />
       <workItem from="1677780561628" duration="2634000" />
-      <workItem from="1678121890754" duration="5352000" />
+      <workItem from="1678121890754" duration="5937000" />
     </task>
     <servers />
   </component>
